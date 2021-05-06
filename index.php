@@ -26,6 +26,9 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+		<!-- Custom theme CSS -->
+		<link href="css/custom-styles.css" rel="stylesheet" />
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 		<!-- Animation -->
  		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
@@ -224,7 +227,6 @@
                 </div>
 				</div></div>
         </section>
-
         <!-- Contact-->
         <section class="contact-section bg-black">
             <div class="container">
@@ -270,8 +272,9 @@
             </div>
         </section>
 
+
 		<!-- Back to Top Start -->
-    	<!--<a href="#" class="scroll-to-top"><i class="fa fa-angle-up"></i></a>-->
+    	<a href="#" id="return-to-top"><i class="icon-chevron-up"></i></a>
     	<!-- Back to Top End -->
 
         <!-- Footer-->
@@ -299,5 +302,20 @@
 		<!--Animation Script-->
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 		<script>AOS.init();</script>
+		<script>
+		// ===== Scroll to Top ====
+		$(window).scroll(function() {
+			if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+				$('#return-to-top').fadeIn(200);    // Fade in the arrow
+			} else {
+				$('#return-to-top').fadeOut(200);   // Else fade out the arrow
+			}
+		});
+		$('#return-to-top').click(function() {      // When arrow is clicked
+			$('body,html').animate({
+				scrollTop : 0                       // Scroll to top of body
+			}, 500);
+		});
+		</script>
     </body>
 </html>
