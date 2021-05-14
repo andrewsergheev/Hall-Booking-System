@@ -1,7 +1,7 @@
 # Village Hall Booking System
 Welcome to Village Hall Booking System. This is a project that been developed for Honours Stage Project in the final year.
 ## Requirements
-This project is intended to develop online software which will allow the people who run small institutions such as village halls to manage bookings and events.  It will be open source and web-based.
+This project is intended to develop online software which will allow the people who run small institutions such as village halls to manage bookings and events.  
 
 The project consists of two sections such as a website for the clients' purpose and a web application
 for office use. The website has two pages the landing page and the booking page. The landing page is
